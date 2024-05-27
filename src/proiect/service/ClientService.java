@@ -1,6 +1,6 @@
-package proiect.service;
+package main.java.proiect.service;
 
-import proiect.models.Client;
+import main.java.proiect.models.Client;
 
 import java.util.Map;
 import java.util.Scanner;

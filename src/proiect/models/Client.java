@@ -1,10 +1,8 @@
-package proiect.models;
-
-import proiect.main;
+package main.java.proiect.models;
 
 import java.util.Objects;
 
-public class Client extends proiect.models.Person {
+public class Client extends Person {
     private String username;
     private int points;
     private int orders;

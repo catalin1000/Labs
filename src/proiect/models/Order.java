@@ -1,9 +1,4 @@
-package proiect.models;
-
-import proiect.main;
-import proiect.models.Client;
-import proiect.models.Drink;
-import proiect.models.Food;
+package main.java.proiect.models;
 
 import java.lang.reflect.Array;
 
@@ -12,7 +7,7 @@ public class Order {
 
     private Client client;
 
-    private proiect.models.Restaurant restaurant;
+    private Restaurant restaurant;
 
     private Driver driver;
 
@@ -20,7 +15,7 @@ public class Order {
 
     private Drink drink;
 
-    public Order(Client client, proiect.models.Restaurant restaurant, Driver driver, Food food, Drink drink) {
+    public Order(Client client, Restaurant restaurant, Driver driver, Food food, Drink drink) {
         this.client = client;
         this.restaurant = restaurant;
         this.driver = driver;
@@ -44,11 +39,11 @@ public class Order {
         this.client = client;
     }
 
-    public proiect.models.Restaurant getRestaurant() {
+    public Restaurant getRestaurant() {
         return restaurant;
     }
 
-    public void setRestaurant(proiect.models.Restaurant restaurant) {
+    public void setRestaurant(Restaurant restaurant) {
         this.restaurant = restaurant;
     }
 

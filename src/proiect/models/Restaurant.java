@@ -1,6 +1,7 @@
-package proiect.models;
+package main.java.proiect.models;
 
 public class Restaurant {
+    private int id;
     private String name;
     private String address;
     private String phoneNumber;
@@ -8,6 +9,7 @@ public class Restaurant {
     private String website;
 
     public Restaurant() {
+        this.id = 0;
         this.name = " ";
         this.address = " ";
         this.phoneNumber = " ";
@@ -21,6 +23,11 @@ public class Restaurant {
         this.email = email;
         this.website = website;
     }
+
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer id) { this.id = id; }
 
     public String getName() {
         return name;

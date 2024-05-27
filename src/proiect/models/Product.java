@@ -1,30 +1,29 @@
-package proiect.models;
+package main.java.proiect.models;
 
 public class Product {
-    private String id;
+    private int id;
     private String name;
     private String description;
     private int price;
 
-    public Product(String id, String name, String description, int price) {
-        this.id = id;
+    public Product(String name, String description, int price) {
         this.name = name;
         this.description = description;
         this.price = price;
     }
 
-    public Product(String id, String name, String description) {
+    public Product(int id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = 0;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -53,7 +52,7 @@ public class Product {
     }
 
     public String toString() {
-        return "Product: " + this.name + " " + this.description + " " + this.price;
+        return this.name + " " + this.description + " " + this.price;
     }
 
 

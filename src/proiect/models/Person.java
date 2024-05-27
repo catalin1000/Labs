@@ -1,4 +1,4 @@
-package proiect.models;
+package main.java.proiect.models;
 
 public class Person {
     private int id;
@@ -62,7 +62,7 @@ public class Person {
     }
 
     public String toString() {
-        return "Client: " + this.name + " " + this.address + " " + this.phoneNumber + " " + this.email;
+        return this.name + " " + this.address + " " + this.phoneNumber + " " + this.email;
     }
 
     @Override

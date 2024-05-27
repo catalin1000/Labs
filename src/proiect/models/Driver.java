@@ -1,11 +1,12 @@
-package proiect.models;
+package main.java.proiect.models;
 
 import java.util.Objects;
 
-public class Driver extends proiect.models.Person {
+public class Driver extends Person {
     // driver will be an employee of the company and will have a salary
     private int salary;
     private String CNP;
+
 
     public Driver(String name, String address, String phoneNumber, String email, int salary, String CNP) {
         super(name, address, phoneNumber, email);

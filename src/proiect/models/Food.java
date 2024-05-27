@@ -1,36 +1,24 @@
-package proiect.models;
+package main.java.proiect.models;
 
-import proiect.main;
+import java.util.Date;
 
-public class Food extends proiect.models.Product {
-    private String expirationDate;
-    private String weight;
+public class Food extends Product {
+    private int weight;
 
-    public Food(String id, String name, String description, String price, String expirationDate, String weight) {
-        super(id, name, description, Integer.parseInt(price));
-        this.expirationDate = expirationDate;
+    public Food(String name, String description, int price, int weight) {
+        super(name, description, price);
         this.weight = weight;
     }
 
-    public Food(String id, String name, String description, String price) {
-        super(id, name, description, Integer.parseInt(price));
-        this.expirationDate = "";
-        this.weight = "";
-    }
-
-    public String getExpirationDate() {
-        return expirationDate;
-    }
-
-    public void setExpirationDate(String expirationDate) {
-        this.expirationDate = expirationDate;
-    }
-
-    public String getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(String weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
+    }
+
+    public String toString() {
+        return "Food: " + super.toString() + " " + this.weight;
     }
 }
